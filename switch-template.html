@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+  <title>SWITCH</title>
+  <script type="text/javascript">
+
+  	
+	
+	function cities(){
+	
+	var cityName = (document.getElementById('cityInputBox').value);
+	var city;
+	switch(cityName){
+		case 'Rexburg':
+			city = "Rexburg, ID";
+			break;
+		case 'Chicago':
+			city = "Oak Lawn, IL";
+			break;
+		case 'Salt Lake':
+			city = "Salt Lake City, UT";
+			break;
+		default:
+			city ='none';
+			window.alert("The city specified is unknown.");
+			break;
+		}
+		document.getElementById('outputDiv').innerHTML = city;
+}
+  </script>
+
+  <style>
+  </style>
+</head>
+
+<body>
+	<p>USING SWITCH</p>
+	<h1>What city you like the most??</h1>
+        Please enter a city name; <input type="text" id="cityInputBox" size="20">
+		<br>
+		<br>
+        <button type="button" onclick="cities()"> You like: </button>
+		<br>
+		<br>
+	    <div id="outputDiv"></div>
+
+</body>
+</html>
